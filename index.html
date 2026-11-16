@@ -280,12 +280,18 @@
       }
 
       .video-container video {
-        border-left: solid 4px #e30713;
-        border-right: solid 4px #e30713;
         height: 100%;
         width: 100%;
         object-fit: cover;
         box-sizing: border-box;
+      }
+
+      .left {
+        border-right: solid 4px #e30713;
+      }
+
+      .right {
+        border-left: solid 4px #e30713;
       }
 
       .TPLG-global-link {
@@ -309,7 +315,7 @@
         class="TPLG-global-link"
       >
       </a>
-      <div class="video-container">
+      <div class="video-container left">
         <video autoplay muted loop playsinline>
           <source
             src="https://raw.githubusercontent.com/bttTPLG/img/refs/heads/main/asset/video-drone.mp4"
@@ -391,7 +397,7 @@
           </div>
         </div>
       </div>
-      <div class="video-container">
+      <div class="video-container right">
         <video autoplay muted loop playsinline>
           <source
             src="https://raw.githubusercontent.com/bttTPLG/img/refs/heads/main/asset/video-drone.mp4"
